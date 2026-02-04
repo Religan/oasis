@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:24.13.0-bookworm
 
 # Ensure that the ~/.ssb directory is persistent and owned by the 'node' user.
 RUN mkdir /home/node/.ssb && chown node:node /home/node/.ssb
